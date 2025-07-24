@@ -1,6 +1,6 @@
 
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import Home from './components/Home/Home'
 import Products from './components/Products/Products'
@@ -54,22 +54,24 @@ function App() {
   ])
   return (
     <>
-      <AuthContextProvider>
-        <QueryClientProvider client={client}>
+      < BrowserRouter basename="/E-Commerce-React">
+        <AuthContextProvider>
+          <QueryClientProvider client={client}>
 
-          <CartContextProvider>
-            <WishListContextProvider>
+            <CartContextProvider>
+              <WishListContextProvider>
 
-              <ReactQueryDevtools />
-              <RouterProvider router={router} />
-              <Toaster />
+                <ReactQueryDevtools />
+                <RouterProvider router={router} />
+                <Toaster />
 
-            </WishListContextProvider>
-          </CartContextProvider>
+              </WishListContextProvider>
+            </CartContextProvider>
 
 
-        </QueryClientProvider>
-      </AuthContextProvider>
+          </QueryClientProvider>
+        </AuthContextProvider>
+      </BrowserRouter>
     </>
   )
 }
