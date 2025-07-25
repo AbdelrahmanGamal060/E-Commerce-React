@@ -54,7 +54,6 @@ function App() {
   ])
   return (
     <>
-      < BrowserRouter basename="/E-Commerce-React">
         <AuthContextProvider>
           <QueryClientProvider client={client}>
 
@@ -71,7 +70,6 @@ function App() {
 
           </QueryClientProvider>
         </AuthContextProvider>
-      </BrowserRouter>
     </>
   )
 }
