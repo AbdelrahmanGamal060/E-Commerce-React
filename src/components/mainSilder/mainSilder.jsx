@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import Style from "./MainSilder.module.css"
+import Style from "./mainSilder.module.css"
 import img1 from "../../assets/images/grocery-banner.png"
 import img2 from "../../assets/images/grocery-banner-2.jpeg"
 import img3 from "../../assets/images/slider-2.jpeg"

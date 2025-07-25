@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Style from "./Category.module.css"
+import Style from "./category.module.css"
 import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 import { Link } from 'react-router-dom'

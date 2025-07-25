@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Style from "./Register.module.css"
+import Style from "./register.module.css"
 import { useFormik } from 'formik'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';

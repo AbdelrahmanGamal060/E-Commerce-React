@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import Style from "./CategorySlider.module.css"
+import Style from "./categorySlider.module.css"
 import axios from "axios";
 import { useEffect, useState } from "react";
 
