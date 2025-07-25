@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Style from "./Allorders.module.css"
+import Style from "./allorders.module.css"
 import { AuthContext } from '../../context/AuthContextProvider'
 import axios from 'axios'
 import { data } from 'react-router-dom'
